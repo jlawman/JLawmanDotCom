@@ -49,6 +49,20 @@ layout: default
     <li><a href="{{ page.url }}">{{ page.title }}</a></li>
     {% endfor %}
     </ul>
+<p> Pandas</p>
+
+    <ul>
+{% for page in site.collections.pandas %}
+  <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+{% endfor %}
+</ul>
+
+<p>Sklearn</p>
+    <ul>
+{% for page in site.collections.sklearn %}
+  <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+{% endfor %}
+</ul>
   </div>
 
 
