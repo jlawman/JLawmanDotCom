@@ -3,7 +3,7 @@ layout: page
 title: DeepLearning.AI: Course 1 - Week 2 Notes
 permalink: /deep-learning/course1-week1
 resource: true
-categories: [deep-learning]
+categories: [deeplearning]
 ---
 
 <h1 class="page-title">{{ page.title | escape }}</h1>

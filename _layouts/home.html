@@ -40,14 +40,14 @@ layout: default
     
 
 {% for cat in site.category-list %}
-<div class="section">
+<div class="section" id={{cat}}>
 <h5> {{ cat }}</h5>
 <ul>
   {% for page in site.pages %}
     {% if page.resource == true %}
       {% for pc in page.categories %}
         {% if pc == cat %}
-          <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+          <li><a class="waves-effect waves-light btn" href="{{ page.url }}">{{ page.title }}</a></li>
         {% endif %}   <!-- cat-match-p -->
       {% endfor %}  <!-- page-category -->
     {% endif %}   <!-- resource-p -->
