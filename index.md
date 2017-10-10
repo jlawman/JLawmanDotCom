@@ -2,4 +2,4 @@
 layout: home
 ---
 
-A Site Starter Materialize Templates for Jekyll.
+Python for Data Science Tutorials and Notes
