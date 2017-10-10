@@ -4,15 +4,8 @@ title: Implementing the Random Forest Classifier for the First Time
 permalink: /sklearn/rfc-tutorial
 ---
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Implementing-the-Random-Forest-Classifier-from-sci-kit-learn">Implementing the Random Forest Classifier from sci-kit learn<a class="anchor-link" href="#Implementing-the-Random-Forest-Classifier-from-sci-kit-learn">&#182;</a></h1>
-</div>
-</div>
-</div>
+<h1 class="page-title">{{ page.title | escape }}</h1>
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
