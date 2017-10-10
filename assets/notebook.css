@@ -75,6 +75,6 @@ br {
 }
 /************** Jupyter Notebook CSS ************************/
 
-.anchor-link{
-    opacity:0;
+a.anchor-link{
+    opacity:0 !important;
 }
