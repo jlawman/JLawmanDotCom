@@ -48,7 +48,7 @@ layout: default
     {% if page.resource == true %}
       {% for pc in page.categories %}
         {% if pc == cat %}
-          <a class="collection-item" href="{{ page.url }}">{{ page.title }}</a>
+          <a class="collection-item blue darken-4" href="{{ page.url }}">{{ page.title }}</a>
         {% endif %}   <!-- cat-match-p -->
       {% endfor %}  <!-- page-category -->
     {% endif %}   <!-- resource-p -->

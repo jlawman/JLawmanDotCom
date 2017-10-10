@@ -40,7 +40,7 @@ categories: [sklearn]
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Blobs">Blobs<a class="anchor-link" href="#Blobs">&#182;</a></h3>
+<h3 id="Blobs">Blobs<a class="anchor-link" href="#Blobs"></a></h3>
 </div>
 </div>
 </div>
@@ -440,7 +440,7 @@ pEwGjhQAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Circles">Circles<a class="anchor-link" href="#Circles">&#182;</a></h3>
+<h3 id="Circles">Circles<a class="anchor-link" href="#Circles"></a></h3>
 </div>
 </div>
 </div>
@@ -930,7 +930,7 @@ Ncak+Sxa71sFDBGRnUAAMFVEJgCRxphFJf20Efv4WWKM+d6HsfpKZX30ArAV+5U9W4wx63wYq9/w
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Regression">Regression<a class="anchor-link" href="#Regression">&#182;</a></h3>
+<h3 id="Regression">Regression<a class="anchor-link" href="#Regression"></a></h3>
 </div>
 </div>
 </div>
@@ -1200,7 +1200,7 @@ K9MOOwMAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Biclusters">Biclusters<a class="anchor-link" href="#Biclusters">&#182;</a></h3>
+<h3 id="Biclusters">Biclusters<a class="anchor-link" href="#Biclusters"></a></h3>
 </div>
 </div>
 </div>
@@ -1321,7 +1321,7 @@ K9MOOwMAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Classification">Classification<a class="anchor-link" href="#Classification">&#182;</a></h3>
+<h3 id="Classification">Classification<a class="anchor-link" href="#Classification"></a></h3>
 </div>
 </div>
 </div>
@@ -1417,7 +1417,7 @@ K9MOOwMAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Multilabel-Classification">Multilabel Classification<a class="anchor-link" href="#Multilabel-Classification">&#182;</a></h3>
+<h3 id="Multilabel-Classification">Multilabel Classification<a class="anchor-link" href="#Multilabel-Classification"></a></h3>
 </div>
 </div>
 </div>
@@ -1516,7 +1516,7 @@ K9MOOwMAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Moons">Moons<a class="anchor-link" href="#Moons">&#182;</a></h3>
+<h3 id="Moons">Moons<a class="anchor-link" href="#Moons"></a></h3>
 </div>
 </div>
 </div>
@@ -1893,7 +1893,7 @@ gg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Spd-Matrix-(Positive-Definite-Matrix)">Spd Matrix (Positive Definite Matrix)<a class="anchor-link" href="#Spd-Matrix-(Positive-Definite-Matrix)">&#182;</a></h3>
+<h3 id="Spd-Matrix-(Positive-Definite-Matrix)">Spd Matrix (Positive Definite Matrix)<a class="anchor-link" href="#Spd-Matrix-(Positive-Definite-Matrix)"></a></h3>
 </div>
 </div>
 </div>
@@ -2248,7 +2248,7 @@ ECmwQghhECmwQghhECmwQghhECmwQghhECmwQghhkP8HCfWc9uFnlP0AAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Others-data-generation-functions-available-in-sklearn">Others data generation functions available in sklearn<a class="anchor-link" href="#Others-data-generation-functions-available-in-sklearn">&#182;</a></h3>
+<h3 id="Others-data-generation-functions-available-in-sklearn">Others data generation functions available in sklearn<a class="anchor-link" href="#Others-data-generation-functions-available-in-sklearn"></a></h3>
 </div>
 </div>
 </div>

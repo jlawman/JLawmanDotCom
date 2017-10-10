@@ -59,8 +59,8 @@ We will be using the iris dataset (<a href="https://en.wikipedia.org/wiki/Iris_f
 
 Each flower in this dataset contains the following features and labels
 <ul>
-    <li>features - measurements of the flower petals and sepals</li>
-    <li>labels - the flower species (setosa, versicolor, or virginica) represented as a 0, 1, or 2.</li>
+ 	<li>features - measurements of the flower petals and sepals</li>
+ 	<li>labels - the flower species (setosa, versicolor, or virginica) represented as a 0, 1, or 2.</li>
 </ul>
 </div>
 </div>
@@ -72,8 +72,8 @@ Each flower in this dataset contains the following features and labels
 
 Our train_test_split function will seperate the data as follows
 <ul>
-    <li>(features_train, labels_train) - 80% of the data prepared for training</li>
-    <li>(features_test, labels_test) - 20% of the data prepared for making our predictions and evaluating our model</li>
+ 	<li>(features_train, labels_train) - 80% of the data prepared for training</li>
+ 	<li>(features_test, labels_test) - 20% of the data prepared for making our predictions and evaluating our model</li>
 </ul>
 </div>
 </div>
@@ -537,13 +537,13 @@ Documentation with full explanation of parameters and use: <a href="http://sciki
 
 Some useful parameters to experiment with:
 <ul>
-    <li>min_samples_leaf (the minimum samles which can be put into each lef)</li>
-    <li>n_estimators (the number of decision trains)</li>
-    <li>max_features (the size of the subset of features to be examined at each split)</li>
+ 	<li>min_samples_leaf (the minimum samles which can be put into each lef)</li>
+ 	<li>n_estimators (the number of decision trains)</li>
+ 	<li>max_features (the size of the subset of features to be examined at each split)</li>
 </ul>
 An optional feature to take advantage of:
 <ul>
-    <li>oob_score (a way of seeing how well the estimator did by cross-validiting on the "out of bag" data, i.e. the data
+ 	<li>oob_score (a way of seeing how well the estimator did by cross-validiting on the "out of bag" data, i.e. the data
 for each tree that was not used in the sample). This would be usefull if you didn't want to split your dataset into a training dataset and a test dataset.</li>
 </ul>
 </div>
