@@ -2,6 +2,8 @@
 layout: page
 title: Generating Random Data
 permalink: /sklearn/generating-random-data
+resource: true
+categories: [sklearn]
 ---
 
 <h1 class="page-title">{{ page.title | escape }}</h1>

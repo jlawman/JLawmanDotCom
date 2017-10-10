@@ -57,12 +57,28 @@ layout: default
 {% endfor %}
 </ul>
 
-<p>Sklearn - 2</p>
+<p>HTML Pages</p>
     <ul>
-{% for page in site.content.sklearn.pages %}
+{% for page in site.c %}
   <li><a href="{{ page.url }}">{{ page.title }}</a></li>
 {% endfor %}
 </ul>
+
+<p>Category Pages</p>
+{% for cat in site.category-list %}
+### {{ cat }}
+<ul>
+  {% for page in site.pages %}
+    {% if page.resource == true %}
+      {% for pc in page.categories %}
+        {% if pc == cat %}
+          <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+        {% endif %}   <!-- cat-match-p -->
+      {% endfor %}  <!-- page-category -->
+    {% endif %}   <!-- resource-p -->
+  {% endfor %}  <!-- page -->
+</ul>
+{% endfor %}  <!-- cat -->
   </div>
 
 
