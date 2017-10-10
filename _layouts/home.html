@@ -36,6 +36,19 @@ layout: default
     </div>
       
     </div>
+
+    <ul>
+    {% for page in site.content %}
+    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+    {% endfor %}
+    </ul>
+    <p>Pandas specific</p>
+    <ul>
+    {% for page in site.content.Pandas %}
+    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+    {% endfor %}
+    </ul>
+
     <div style="background: #ddd">
     <div class="container last-post">
     <section>
