@@ -1,7 +1,7 @@
 ---
 layout: page
-title: DeepLearning.AI: Course 1 - Week 1 Notes
-permalink: /deep-learning/course1-week1
+title: DeepLearning.AI Course 1 - Week 1 Notes
+permalink: /deeplearning/course1-week1
 resource: true
 categories: [deeplearning]
 ---
