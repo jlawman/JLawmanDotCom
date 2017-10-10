@@ -48,45 +48,6 @@ layout: default
     {% if page.resource == true %}
       {% for pc in page.categories %}
         {% if pc == cat %}
-          <a class="collection-item blue-text darken-2" href="{{ page.url }}">{{ page.title }}</a>
-        {% endif %}   <!-- cat-match-p -->
-      {% endfor %}  <!-- page-category -->
-    {% endif %}   <!-- resource-p -->
-  {% endfor %}  <!-- page -->
-</div>
-</div>
-{% endfor %}  <!-- cat -->
-  </div>
-
-      <div class='container'>
-    
-
-{% for cat in site.category-list %}
-<div class="section" id={{cat}}>
-<h5> {{ cat }}</h5>
-<div class="collection">
-  {% for page in site.pages %}
-    {% if page.resource == true %}
-      {% for pc in page.categories %}
-        {% if pc == cat %}
-          <a class="collection-item grey-text darken-4" href="{{ page.url }}">{{ page.title }}</a>
-        {% endif %}   <!-- cat-match-p -->
-      {% endfor %}  <!-- page-category -->
-    {% endif %}   <!-- resource-p -->
-  {% endfor %}  <!-- page -->
-</div>
-</div>
-{% endfor %}  <!-- cat -->
-  </div>
-
-  {% for cat in site.category-list %}
-<div class="section" id={{cat}}>
-<h5> {{ cat }}</h5>
-<div class="collection">
-  {% for page in site.pages %}
-    {% if page.resource == true %}
-      {% for pc in page.categories %}
-        {% if pc == cat %}
           <a class="collection-item blue-text darken-4" href="{{ page.url }}">{{ page.title }}</a>
         {% endif %}   <!-- cat-match-p -->
       {% endfor %}  <!-- page-category -->
@@ -95,7 +56,4 @@ layout: default
 </div>
 </div>
 {% endfor %}  <!-- cat -->
-  </div>
-
-
   </div>

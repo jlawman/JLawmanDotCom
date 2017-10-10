@@ -8,12 +8,15 @@ categories: [deeplearning]
 
 <h1 class="page-title">{{ page.title | escape }}</h1>
 
+I will be taking deeplearning.ai's 5-course <a href="https://www.deeplearning.ai/" rel="noopener" target="_blank">Deep Learning Specialization</a> on Coursera. Here are my notes from week 1 (Introduction to deep learning) of the first course (Neural Networks and Deep Learning).
+
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="1.-Neural-Nets-are-Particularly-Useful-in-Supervised-Learning-Problems">1. Neural Nets are Particularly Useful in Supervised Learning Problems<a class="anchor-link" href="#1.-Neural-Nets-are-Particularly-Useful-in-Supervised-Learning-Problems">&#182;</a></h4><ul>
+<h4 id="1.-Neural-Nets-are-Particularly-Useful-in-Supervised-Learning-Problems">1. Neural Nets are Particularly Useful in Supervised Learning Problems<a class="anchor-link" href="#1.-Neural-Nets-are-Particularly-Useful-in-Supervised-Learning-Problems"></a></h4><ul>
 <li>Standard Neural nets: Real estate, online advertising (selecting best ad to show user based on prediction regarding whether they will click on ad or not).</li>
 <li>Convolutional Neural Nets (CNNs): Image recognition.</li>
 <li>Recurrent Neural Nets (RNNs): Audio processing (speech recognition) and text translation.</li>
@@ -28,7 +31,7 @@ categories: [deeplearning]
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="2.-NNs-Work-Well-with-Structured-and-Unstructured-Data">2. NNs Work Well with Structured and Unstructured Data<a class="anchor-link" href="#2.-NNs-Work-Well-with-Structured-and-Unstructured-Data">&#182;</a></h4><ul>
+<h4 id="2.-NNs-Work-Well-with-Structured-and-Unstructured-Data">2. NNs Work Well with Structured and Unstructured Data<a class="anchor-link" href="#2.-NNs-Work-Well-with-Structured-and-Unstructured-Data"></a></h4><ul>
 <li>Structured data example: Data arranged neatly such as in a Pandas DataFrame.</li>
 <li>Unstructured data examples: Audio, image, text.</li>
 <li>Unstructured data has traditionally been harder for computers to understand which is why the NN improvements in this area have been so ground-breaking.</li>
@@ -42,7 +45,7 @@ categories: [deeplearning]
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="3.-Scale-(in-Data-and-Computational-Power)-Drives-NN-Performance">3. Scale (in Data and Computational Power) Drives NN Performance<a class="anchor-link" href="#3.-Scale-(in-Data-and-Computational-Power)-Drives-NN-Performance">&#182;</a></h4><ul>
+<h4 id="3.-Scale-(in-Data-and-Computational-Power)-Drives-NN-Performance">3. Scale (in Data and Computational Power) Drives NN Performance<a class="anchor-link" href="#3.-Scale-(in-Data-and-Computational-Power)-Drives-NN-Performance"></a></h4><ul>
 <li>At small scale, the most important factor is manipulating the data (with feature engineering, etc.). At small scale, traditional machine learning algorithms perform comparably well to large neural nets.</li>
 <li>At large scale, large neural nets with large amounts of data will perform the best.</li>
 <li>Increasing the amount of training data usually does not harm the performance of the algorithm.</li>
@@ -546,7 +549,7 @@ GSglSZIkSZLUIAOlJEmSJEmSGmSglCRJkiRJUoP/A5hlvAF8ULK3AAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="4.-Improving-Training-Speed-is-Essential-Given-the-Iterative-Process-of-Developing-with-NNs:">4. Improving Training Speed is Essential Given the Iterative Process of Developing with NNs:<a class="anchor-link" href="#4.-Improving-Training-Speed-is-Essential-Given-the-Iterative-Process-of-Developing-with-NNs:">&#182;</a></h4><ul>
+<h4 id="4.-Improving-Training-Speed-is-Essential-Given-the-Iterative-Process-of-Developing-with-NNs:">4. Improving Training Speed is Essential Given the Iterative Process of Developing with NNs:<a class="anchor-link" href="#4.-Improving-Training-Speed-is-Essential-Given-the-Iterative-Process-of-Developing-with-NNs:"></a></h4><ul>
 <li>Neural networks are developed in an iterative fashion. This fact, combined with the need for large neural nets trained on massive data sets mean that improvements in training speed allows for faster innovation with NNs.</li>
 <li>Algorithmic improvments have helped improve training speed. Developments such as using the ReLU function for activation instead of the sigmoid function have improved training speed which allow for faster iterations of implementing NNs.</li>
 <li>Depending on the scale of the application, training can take a wide range of time from 10 minutes to an entire month.</li>
@@ -556,4 +559,7 @@ GSglSZIkSZLUIAOlJEmSJEmSGmSglCRJkiRJUoP/A5hlvAF8ULK3AAAAAElFTkSuQmCC
 </div>
 </div>
  
+
+
+
 
