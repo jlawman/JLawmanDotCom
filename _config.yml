@@ -9,5 +9,13 @@ github_username:  jlawman
 
 category-list: [pandas, sklearn, deep-learning]
 
+collections:
+  -pandas:
+    output:true 
+  -sklearn:
+    output:true
+  -deep-learning:
+    output:true
+
 sass:
     style: compressed
