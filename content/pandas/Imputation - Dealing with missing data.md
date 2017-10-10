@@ -678,114 +678,13 @@ dtype: int64</pre>
 </div>
 
 </div>
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<h2 id="Challenge">Challenge<a class="anchor-link" href="#Challenge"></a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.-Get-the-data:">1. Get the data:<a class="anchor-link" href="#1.-Get-the-data:"></a></h3><p>Download "train.csv" from Kaggle:
-<a href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data">https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data</a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.-Explore-the-missing-data">2. Explore the missing data<a class="anchor-link" href="#2.-Explore-the-missing-data"></a></h3><p>On the entire dataset, run:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Missing value counts</span>
-<span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()[</span><span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">]</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[17]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>LotFrontage      259
-Alley           1369
-MasVnrType         8
-MasVnrArea         8
-BsmtQual          37
-BsmtCond          37
-BsmtExposure      38
-BsmtFinType1      37
-BsmtFinType2      38
-Electrical         1
-FireplaceQu      690
-GarageType        81
-GarageYrBlt       81
-GarageFinish      81
-GarageQual        81
-GarageCond        81
-PoolQC          1453
-Fence           1179
-MiscFeature     1406
-dtype: int64</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Then select two column to impute values to.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3.-Impute-Substitute-Values">3. Impute Substitute Values<a class="anchor-link" href="#3.-Impute-Substitute-Values"></a></h3><p>Choose which strategies you think are best.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="(Optional-extra-challenge):">(Optional extra challenge):<a class="anchor-link" href="#(Optional-extra-challenge):"></a></h3><p>Try to implement scikit-learn's Imputer:
+<h2 id="Scikit-Learn Application:">Scikit-Learn Application:<a class="anchor-link" href="#(Optional-extra-challenge):"></a></h3><p>Scikit-learn includes imputation functionality in its preprocessing module.:
 <a href="http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.Imputer.html">http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.Imputer.html</a></p>
 
 </div>
