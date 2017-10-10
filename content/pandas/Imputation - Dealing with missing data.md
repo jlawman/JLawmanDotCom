@@ -13,16 +13,7 @@ categories: [pandas]
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Imputation---Dealing-with-missing-data">Imputation - Dealing with missing data<a class="anchor-link" href="#Imputation---Dealing-with-missing-data">&#182;</a></h1>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Problem:">Problem:<a class="anchor-link" href="#Problem:">&#182;</a></h3><p>Sometimes our datasets have missing values.</p>
+<h3 id="Problem:">Problem:<a class="anchor-link" href="#Problem:"></a></h3><p>Sometimes our datasets have missing values.</p>
 <p>Machine learning algorithms don't deal well with missing values.</p>
 
 </div>
@@ -33,7 +24,7 @@ categories: [pandas]
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Solutions">Solutions<a class="anchor-link" href="#Solutions">&#182;</a></h3><p><strong>Solution 1:</strong><br>
+<h3 id="Solutions">Solutions<a class="anchor-link" href="#Solutions"></a></h3><p><strong>Solution 1:</strong><br>
 Drop each feature which contains missing values (drop the column)</p>
 <p><strong>Solution 2:</strong><br>
 Drop each entry which contains missing values (drop the row)</p>
@@ -48,7 +39,7 @@ Imputation (fill in the missing values)</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Imputation:">Imputation:<a class="anchor-link" href="#Imputation:">&#182;</a></h3><p>Deal with missing data points by substituting new values.
+<h3 id="Imputation:">Imputation:<a class="anchor-link" href="#Imputation:"></a></h3><p>Deal with missing data points by substituting new values.
 <br><br>
 Common strategy: replace each missing value in a feature with the mean, median, or mode of the feature.</p>
 
@@ -60,7 +51,7 @@ Common strategy: replace each missing value in a feature with the mean, median, 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Mean,-Median,-Mode-Refresher">Mean, Median, Mode Refresher<a class="anchor-link" href="#Mean,-Median,-Mode-Refresher">&#182;</a></h3><p><strong>Mean</strong>:<br>
+<h3 id="Mean,-Median,-Mode-Refresher">Mean, Median, Mode Refresher<a class="anchor-link" href="#Mean,-Median,-Mode-Refresher"></a></h3><p><strong>Mean</strong>:<br>
 Numerical average - the mean of [1,2,3,4] is (1+2+3+4)/4 = 2.5.</p>
 <p><strong>Median</strong>:<br>
 The middle value - the median of [1,3,10] is 3.</p>
@@ -76,7 +67,7 @@ Most frequent value - the mode of [1,3,3] is 3.</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h1 id="1.-Get-the-data">1. Get the data<a class="anchor-link" href="#1.-Get-the-data">&#182;</a></h1>
+<h2 id="1.-Get-the-data">1. Get the data<a class="anchor-link" href="#1.-Get-the-data"></a></h2>
 </div>
 </div>
 </div>
@@ -96,7 +87,7 @@ Most frequent value - the mode of [1,3,3] is 3.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Import-pandas">Import pandas<a class="anchor-link" href="#Import-pandas">&#182;</a></h3>
+<h3 id="Import-pandas">Import pandas<a class="anchor-link" href="#Import-pandas"></a></h3>
 </div>
 </div>
 </div>
@@ -118,7 +109,7 @@ Most frequent value - the mode of [1,3,3] is 3.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Read-data">Read data<a class="anchor-link" href="#Read-data">&#182;</a></h3>
+<h3 id="Read-data">Read data<a class="anchor-link" href="#Read-data"></a></h3>
 </div>
 </div>
 </div>
@@ -140,7 +131,7 @@ Most frequent value - the mode of [1,3,3] is 3.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Create-subset-of-the-data-to-work-with">Create subset of the data to work with<a class="anchor-link" href="#Create-subset-of-the-data-to-work-with">&#182;</a></h3><ul>
+<h3 id="Create-subset-of-the-data-to-work-with">Create subset of the data to work with<a class="anchor-link" href="#Create-subset-of-the-data-to-work-with"></a></h3><ul>
 <li>LotFrontage: Linear feet of street connected to property</li>
 <li>FireplaceQu: Fireplace quality</li>
 <li>GarageYrBlt: Year garage was built</li>
@@ -261,7 +252,7 @@ Most frequent value - the mode of [1,3,3] is 3.</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h1 id="2.-Explore-the-missing-data">2. Explore the missing data<a class="anchor-link" href="#2.-Explore-the-missing-data">&#182;</a></h1>
+<h2 id="2.-Explore-the-missing-data">2. Explore the missing data<a class="anchor-link" href="#2.-Explore-the-missing-data"></a></h2>
 </div>
 </div>
 </div>
@@ -270,7 +261,7 @@ Most frequent value - the mode of [1,3,3] is 3.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Examine-missing-data">Examine missing data<a class="anchor-link" href="#Examine-missing-data">&#182;</a></h3>
+<h3 id="Examine-missing-data">Examine missing data<a class="anchor-link" href="#Examine-missing-data"></a></h3>
 </div>
 </div>
 </div>
@@ -349,7 +340,7 @@ dtype: float64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Drop-columns-with-more-than-25%-of-missing-data">Drop columns with more than 25% of missing data<a class="anchor-link" href="#Drop-columns-with-more-than-25%-of-missing-data">&#182;</a></h3>
+<h3 id="Drop-columns-with-more-than-25%-of-missing-data">Drop columns with more than 25% of missing data<a class="anchor-link" href="#Drop-columns-with-more-than-25%-of-missing-data"></a></h3>
 </div>
 </div>
 </div>
@@ -440,7 +431,7 @@ dtype: float64</pre>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h1 id="3.-Impute-Substitute-Values">3. Impute Substitute Values<a class="anchor-link" href="#3.-Impute-Substitute-Values">&#182;</a></h1>
+<h2 id="3.-Impute-Substitute-Values">3. Impute Substitute Values<a class="anchor-link" href="#3.-Impute-Substitute-Values"></a></h2>
 </div>
 </div>
 </div>
@@ -449,7 +440,7 @@ dtype: float64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Strategy-1:-Impute-Mean">Strategy 1: Impute Mean<a class="anchor-link" href="#Strategy-1:-Impute-Mean">&#182;</a></h3>
+<h3 id="Strategy-1:-Impute-Mean">Strategy 1: Impute Mean<a class="anchor-link" href="#Strategy-1:-Impute-Mean"></a></h3>
 </div>
 </div>
 </div>
@@ -504,7 +495,7 @@ dtype: float64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Strategy-2:-Impute-Median">Strategy 2: Impute Median<a class="anchor-link" href="#Strategy-2:-Impute-Median">&#182;</a></h3>
+<h3 id="Strategy-2:-Impute-Median">Strategy 2: Impute Median<a class="anchor-link" href="#Strategy-2:-Impute-Median"></a></h3>
 </div>
 </div>
 </div>
@@ -559,7 +550,7 @@ dtype: float64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Strategy-3:-Impute-Mode">Strategy 3: Impute Mode<a class="anchor-link" href="#Strategy-3:-Impute-Mode">&#182;</a></h3>
+<h3 id="Strategy-3:-Impute-Mode">Strategy 3: Impute Mode<a class="anchor-link" href="#Strategy-3:-Impute-Mode"></a></h3>
 </div>
 </div>
 </div>
@@ -600,7 +591,7 @@ Name: BsmtCond, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bsmt_cond_mode</span> <span class="o">=</span> <span class="n">housing</span><span class="p">[</span><span class="s1">&#39;BsmtCond&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -617,7 +608,7 @@ Name: BsmtCond, dtype: int64</pre>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[20]:</div>
+<div class="prompt output_prompt">Out[14]:</div>
 
 
 
@@ -633,7 +624,7 @@ Name: BsmtCond, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">housing</span><span class="p">[</span><span class="s1">&#39;BsmtCond&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">bsmt_cond_mode</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -649,13 +640,13 @@ Name: BsmtCond, dtype: int64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Check-for-missing-data">Check for missing data<a class="anchor-link" href="#Check-for-missing-data">&#182;</a></h3>
+<h3 id="Check-for-missing-data">Check for missing data<a class="anchor-link" href="#Check-for-missing-data"></a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">housing</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -670,7 +661,7 @@ Name: BsmtCond, dtype: int64</pre>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[22]:</div>
+<div class="prompt output_prompt">Out[16]:</div>
 
 
 
@@ -693,7 +684,7 @@ dtype: int64</pre>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h1 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">&#182;</a></h1>
+<h2 id="Challenge">Challenge<a class="anchor-link" href="#Challenge"></a></h2>
 </div>
 </div>
 </div>
@@ -702,7 +693,7 @@ dtype: int64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.-Get-the-data:">1. Get the data:<a class="anchor-link" href="#1.-Get-the-data:">&#182;</a></h3><p>Download "train.csv" from Kaggle:
+<h3 id="1.-Get-the-data:">1. Get the data:<a class="anchor-link" href="#1.-Get-the-data:"></a></h3><p>Download "train.csv" from Kaggle:
 <a href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data">https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data</a></p>
 
 </div>
@@ -713,14 +704,14 @@ dtype: int64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.-Explore-the-missing-data">2. Explore the missing data<a class="anchor-link" href="#2.-Explore-the-missing-data">&#182;</a></h3><p>On the entire dataset, run:</p>
+<h3 id="2.-Explore-the-missing-data">2. Explore the missing data<a class="anchor-link" href="#2.-Explore-the-missing-data"></a></h3><p>On the entire dataset, run:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Missing value counts</span>
@@ -736,7 +727,7 @@ dtype: int64</pre>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[16]:</div>
+<div class="prompt output_prompt">Out[17]:</div>
 
 
 
@@ -784,7 +775,7 @@ dtype: int64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3.-Impute-Substitute-Values">3. Impute Substitute Values<a class="anchor-link" href="#3.-Impute-Substitute-Values">&#182;</a></h3><p>Choose which strategies you think are best.</p>
+<h3 id="3.-Impute-Substitute-Values">3. Impute Substitute Values<a class="anchor-link" href="#3.-Impute-Substitute-Values"></a></h3><p>Choose which strategies you think are best.</p>
 
 </div>
 </div>
@@ -794,11 +785,10 @@ dtype: int64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="(Optional-extra-challenge):">(Optional extra challenge):<a class="anchor-link" href="#(Optional-extra-challenge):">&#182;</a></h3><p>Try to implement scikit-learn's Imputer:
+<h3 id="(Optional-extra-challenge):">(Optional extra challenge):<a class="anchor-link" href="#(Optional-extra-challenge):"></a></h3><p>Try to implement scikit-learn's Imputer:
 <a href="http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.Imputer.html">http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.Imputer.html</a></p>
 
 </div>
 </div>
 </div>
  
-

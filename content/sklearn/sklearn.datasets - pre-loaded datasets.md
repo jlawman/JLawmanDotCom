@@ -39,7 +39,7 @@ categories: [sklearn]
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Loading-dataset:">Loading dataset:<a class="anchor-link" href="#Loading-dataset:">&#182;</a></h3>
+<h3 id="Loading-dataset:">Loading dataset:<a class="anchor-link" href="#Loading-dataset:"></a></h3>
 </div>
 </div>
 </div>
@@ -74,7 +74,7 @@ categories: [sklearn]
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Accessing-dataset:">Accessing dataset:<a class="anchor-link" href="#Accessing-dataset:">&#182;</a></h3>
+<h3 id="Accessing-dataset:">Accessing dataset:<a class="anchor-link" href="#Accessing-dataset:"></a></h3>
 </div>
 </div>
 </div>
@@ -108,7 +108,7 @@ iris.target_names<br></p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Examining-dataset">Examining dataset<a class="anchor-link" href="#Examining-dataset">&#182;</a></h3>
+<h3 id="Examining-dataset">Examining dataset<a class="anchor-link" href="#Examining-dataset"></a></h3>
 </div>
 </div>
 </div>
@@ -300,7 +300,7 @@ iris.target_names<br></p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Printing-description-of-dataset">Printing description of dataset<a class="anchor-link" href="#Printing-description-of-dataset">&#182;</a></h3>
+<h3 id="Printing-description-of-dataset">Printing description of dataset<a class="anchor-link" href="#Printing-description-of-dataset"></a></h3>
 </div>
 </div>
 </div>
@@ -400,7 +400,7 @@ References
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Feature-Names">Feature Names<a class="anchor-link" href="#Feature-Names">&#182;</a></h3><p>Note: digits has no feature_names</p>
+<h3 id="Feature-Names">Feature Names<a class="anchor-link" href="#Feature-Names"></a></h3><p>Note: digits has no feature_names</p>
 
 </div>
 </div>
@@ -480,7 +480,7 @@ References
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Target-Names">Target Names<a class="anchor-link" href="#Target-Names">&#182;</a></h3>
+<h3 id="Target-Names">Target Names<a class="anchor-link" href="#Target-Names"></a></h3>
 </div>
 </div>
 </div>
@@ -533,7 +533,7 @@ References
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Shapes">Shapes<a class="anchor-link" href="#Shapes">&#182;</a></h3>
+<h3 id="Shapes">Shapes<a class="anchor-link" href="#Shapes"></a></h3>
 </div>
 </div>
 </div>
@@ -589,4 +589,3 @@ References
 
 </div>
  
-
