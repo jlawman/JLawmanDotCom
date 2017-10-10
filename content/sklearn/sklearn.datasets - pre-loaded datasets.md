@@ -1,0 +1,592 @@
+---
+layout: page
+title: Accessing Pre-Loaded Datasets
+permalink: /sklearn/pre-loaded-datasets
+resource: true
+categories: [sklearn]
+---
+
+<h1 class="page-title">{{ page.title | escape }}</h1>
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Sklearn comes with multiple preloaded datasets for data manipulation, regression, or classification. They are loaded with the following commands</p>
+<p>Classification datasets:</p>
+<ul>
+<li>iris (4 features - set of measurements of flowers - 3 possible flower species)</li>
+<li>breast_cancer (features describing malignant and benign cell nuclei)</li>
+<li>digits (hand-written digits stored as 64 numerical array representing 8x8 black/white images)    </li>
+<li>wine (13 numeric features - 3 possibile wine classes)</li>
+</ul>
+<p>Regression datsets:</p>
+<ul>
+<li>boston (13 numeric/categorical features - predict housing prices from boston)</li>
+<li>diabetes (10 numeric features - used to predict disease progression)  </li>
+</ul>
+<p>Multivariate regression:</p>
+<ul>
+<li>linnerud (3 numeric features - phsyical exercises - 3 numeric observations on weight, waist, pulse)</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Loading-dataset:">Loading dataset:<a class="anchor-link" href="#Loading-dataset:">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>from sklearn.datasets import load_name</p>
+<p>name = load_name()</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <span class="n">load_iris</span>
+
+<span class="n">iris</span> <span class="o">=</span> <span class="n">load_iris</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Accessing-dataset:">Accessing dataset:<a class="anchor-link" href="#Accessing-dataset:">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To see this options, type iris. then tab after importing.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Select any of the following:<br></p>
+<p>iris.data<br>
+iris.DESCR<br>
+iris.feature_names<br>
+iris.target<br>
+iris.target_names<br></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Examining-dataset">Examining dataset<a class="anchor-link" href="#Examining-dataset">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">iris_features_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">,</span>
+                               <span class="n">columns</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">feature_names</span><span class="p">)</span>
+
+<span class="n">iris_features_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[3]:</div>
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>sepal length (cm)</th>
+      <th>sepal width (cm)</th>
+      <th>petal length (cm)</th>
+      <th>petal width (cm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>5.1</td>
+      <td>3.5</td>
+      <td>1.4</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4.9</td>
+      <td>3.0</td>
+      <td>1.4</td>
+      <td>0.2</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">iris_target_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">iris</span><span class="o">.</span><span class="n">target</span><span class="p">,</span>
+                               <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Species&quot;</span><span class="p">])</span>
+
+<span class="n">iris_target_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[4]:</div>
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Species</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">target_names</span><span class="p">)</span> <span class="c1">#0 - setosa, 1 - versicolor, 2- virginica</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[5]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;setosa&#39;, &#39;versicolor&#39;, &#39;virginica&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Printing-description-of-dataset">Printing description of dataset<a class="anchor-link" href="#Printing-description-of-dataset">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">DESCR</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Iris Plants Database
+====================
+
+Notes
+-----
+Data Set Characteristics:
+    :Number of Instances: 150 (50 in each of three classes)
+    :Number of Attributes: 4 numeric, predictive attributes and the class
+    :Attribute Information:
+        - sepal length in cm
+        - sepal width in cm
+        - petal length in cm
+        - petal width in cm
+        - class:
+                - Iris-Setosa
+                - Iris-Versicolour
+                - Iris-Virginica
+    :Summary Statistics:
+
+    ============== ==== ==== ======= ===== ====================
+                    Min  Max   Mean    SD   Class Correlation
+    ============== ==== ==== ======= ===== ====================
+    sepal length:   4.3  7.9   5.84   0.83    0.7826
+    sepal width:    2.0  4.4   3.05   0.43   -0.4194
+    petal length:   1.0  6.9   3.76   1.76    0.9490  (high!)
+    petal width:    0.1  2.5   1.20  0.76     0.9565  (high!)
+    ============== ==== ==== ======= ===== ====================
+
+    :Missing Attribute Values: None
+    :Class Distribution: 33.3% for each of 3 classes.
+    :Creator: R.A. Fisher
+    :Donor: Michael Marshall (MARSHALL%PLU@io.arc.nasa.gov)
+    :Date: July, 1988
+
+This is a copy of UCI ML iris datasets.
+http://archive.ics.uci.edu/ml/datasets/Iris
+
+The famous Iris database, first used by Sir R.A Fisher
+
+This is perhaps the best known database to be found in the
+pattern recognition literature.  Fisher&#39;s paper is a classic in the field and
+is referenced frequently to this day.  (See Duda &amp; Hart, for example.)  The
+data set contains 3 classes of 50 instances each, where each class refers to a
+type of iris plant.  One class is linearly separable from the other 2; the
+latter are NOT linearly separable from each other.
+
+References
+----------
+   - Fisher,R.A. &#34;The use of multiple measurements in taxonomic problems&#34;
+     Annual Eugenics, 7, Part II, 179-188 (1936); also in &#34;Contributions to
+     Mathematical Statistics&#34; (John Wiley, NY, 1950).
+   - Duda,R.O., &amp; Hart,P.E. (1973) Pattern Classification and Scene Analysis.
+     (Q327.D83) John Wiley &amp; Sons.  ISBN 0-471-22361-1.  See page 218.
+   - Dasarathy, B.V. (1980) &#34;Nosing Around the Neighborhood: A New System
+     Structure and Classification Rule for Recognition in Partially Exposed
+     Environments&#34;.  IEEE Transactions on Pattern Analysis and Machine
+     Intelligence, Vol. PAMI-2, No. 1, 67-71.
+   - Gates, G.W. (1972) &#34;The Reduced Nearest Neighbor Rule&#34;.  IEEE Transactions
+     on Information Theory, May 1972, 431-433.
+   - See also: 1988 MLC Proceedings, 54-64.  Cheeseman et al&#34;s AUTOCLASS II
+     conceptual clustering system finds 3 classes in the data.
+   - Many, many more ...
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Feature-Names">Feature Names<a class="anchor-link" href="#Feature-Names">&#182;</a></h3><p>Note: digits has no feature_names</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <span class="n">load_breast_cancer</span><span class="p">,</span><span class="n">load_boston</span><span class="p">,</span><span class="n">load_diabetes</span><span class="p">,</span><span class="n">load_linnerud</span><span class="p">,</span><span class="n">load_digits</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">datasets</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Iris&#39;</span><span class="p">:</span><span class="n">load_iris</span><span class="p">()</span> <span class="p">,</span><span class="s1">&#39;Breast Cancer&#39;</span><span class="p">:</span><span class="n">load_breast_cancer</span><span class="p">(),</span><span class="s1">&#39;Boston&#39;</span><span class="p">:</span><span class="n">load_boston</span><span class="p">(),</span>
+            <span class="s1">&#39;Diabetes&#39;</span><span class="p">:</span><span class="n">load_diabetes</span><span class="p">(),</span><span class="s1">&#39;Linnerud&#39;</span><span class="p">:</span><span class="n">load_linnerud</span><span class="p">()}</span>
+
+<span class="k">for</span> <span class="n">dataset</span> <span class="ow">in</span> <span class="n">datasets</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">** </span><span class="si">{}</span><span class="s2"> **&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dataset</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">datasets</span><span class="p">[</span><span class="n">dataset</span><span class="p">]</span><span class="o">.</span><span class="n">feature_names</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+** Iris **
+[&#39;sepal length (cm)&#39;, &#39;sepal width (cm)&#39;, &#39;petal length (cm)&#39;, &#39;petal width (cm)&#39;]
+
+** Breast Cancer **
+[&#39;mean radius&#39; &#39;mean texture&#39; &#39;mean perimeter&#39; &#39;mean area&#39;
+ &#39;mean smoothness&#39; &#39;mean compactness&#39; &#39;mean concavity&#39;
+ &#39;mean concave points&#39; &#39;mean symmetry&#39; &#39;mean fractal dimension&#39;
+ &#39;radius error&#39; &#39;texture error&#39; &#39;perimeter error&#39; &#39;area error&#39;
+ &#39;smoothness error&#39; &#39;compactness error&#39; &#39;concavity error&#39;
+ &#39;concave points error&#39; &#39;symmetry error&#39; &#39;fractal dimension error&#39;
+ &#39;worst radius&#39; &#39;worst texture&#39; &#39;worst perimeter&#39; &#39;worst area&#39;
+ &#39;worst smoothness&#39; &#39;worst compactness&#39; &#39;worst concavity&#39;
+ &#39;worst concave points&#39; &#39;worst symmetry&#39; &#39;worst fractal dimension&#39;]
+
+** Boston **
+[&#39;CRIM&#39; &#39;ZN&#39; &#39;INDUS&#39; &#39;CHAS&#39; &#39;NOX&#39; &#39;RM&#39; &#39;AGE&#39; &#39;DIS&#39; &#39;RAD&#39; &#39;TAX&#39; &#39;PTRATIO&#39;
+ &#39;B&#39; &#39;LSTAT&#39;]
+
+** Diabetes **
+[&#39;age&#39;, &#39;sex&#39;, &#39;bmi&#39;, &#39;bp&#39;, &#39;s1&#39;, &#39;s2&#39;, &#39;s3&#39;, &#39;s4&#39;, &#39;s5&#39;, &#39;s6&#39;]
+
+** Linnerud **
+[&#39;Chins&#39;, &#39;Situps&#39;, &#39;Jumps&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Target-Names">Target Names<a class="anchor-link" href="#Target-Names">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">datasets</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Iris&#39;</span><span class="p">:</span><span class="n">load_iris</span><span class="p">()</span> <span class="p">,</span><span class="s1">&#39;Breast Cancer&#39;</span><span class="p">:</span><span class="n">load_breast_cancer</span><span class="p">(),</span><span class="s1">&#39;Digits&#39;</span><span class="p">:</span><span class="n">load_digits</span><span class="p">(),</span><span class="s1">&#39;Linnerud&#39;</span><span class="p">:</span><span class="n">load_linnerud</span><span class="p">()}</span>
+
+<span class="k">for</span> <span class="n">dataset</span> <span class="ow">in</span> <span class="n">datasets</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">** </span><span class="si">{}</span><span class="s2"> **&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dataset</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">datasets</span><span class="p">[</span><span class="n">dataset</span><span class="p">]</span><span class="o">.</span><span class="n">target_names</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+** Iris **
+[&#39;setosa&#39; &#39;versicolor&#39; &#39;virginica&#39;]
+
+** Breast Cancer **
+[&#39;malignant&#39; &#39;benign&#39;]
+
+** Digits **
+[0 1 2 3 4 5 6 7 8 9]
+
+** Linnerud **
+[&#39;Weight&#39;, &#39;Waist&#39;, &#39;Pulse&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Shapes">Shapes<a class="anchor-link" href="#Shapes">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">datasets</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Iris&#39;</span><span class="p">:</span><span class="n">load_iris</span><span class="p">()</span> <span class="p">,</span><span class="s1">&#39;Breast Cancer&#39;</span><span class="p">:</span><span class="n">load_breast_cancer</span><span class="p">(),</span><span class="s1">&#39;Boston&#39;</span><span class="p">:</span><span class="n">load_boston</span><span class="p">(),</span><span class="s1">&#39;Digits&#39;</span><span class="p">:</span><span class="n">load_digits</span><span class="p">(),</span>
+            <span class="s1">&#39;Diabetes&#39;</span><span class="p">:</span><span class="n">load_diabetes</span><span class="p">(),</span><span class="s1">&#39;Linnerud&#39;</span><span class="p">:</span><span class="n">load_linnerud</span><span class="p">()}</span>
+
+<span class="k">for</span> <span class="n">dataset</span> <span class="ow">in</span> <span class="n">datasets</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">** </span><span class="si">{}</span><span class="s2"> **&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dataset</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">datasets</span><span class="p">[</span><span class="n">dataset</span><span class="p">]</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+** Iris **
+(150, 4)
+
+** Breast Cancer **
+(569, 30)
+
+** Boston **
+(506, 13)
+
+** Digits **
+(1797, 64)
+
+** Diabetes **
+(442, 10)
+
+** Linnerud **
+(20, 3)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+ 
+

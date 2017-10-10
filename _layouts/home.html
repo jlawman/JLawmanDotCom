@@ -37,36 +37,11 @@ layout: default
       
     </div>
     <div class='container'>
-    <ul>
-    {% for page in site.content.pandas %}
-    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-    {% endfor %}
-    </ul>
+    
 
-    <p> General</p>
-    <ul>
-    {% for page in site.pages %}
-    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-    {% endfor %}
-    </ul>
-<p> Pandas</p>
-
-    <ul>
-{% for page in site.pandas %}
-  <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-{% endfor %}
-</ul>
-
-<p>HTML Pages</p>
-    <ul>
-{% for page in site.c %}
-  <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-{% endfor %}
-</ul>
-
-<p>Category Pages</p>
 {% for cat in site.category-list %}
-### {{ cat }}
+<div class="section">
+<h5> {{ cat }}</h5>
 <ul>
   {% for page in site.pages %}
     {% if page.resource == true %}
@@ -78,6 +53,7 @@ layout: default
     {% endif %}   <!-- resource-p -->
   {% endfor %}  <!-- page -->
 </ul>
+</div>
 {% endfor %}  <!-- cat -->
   </div>
 

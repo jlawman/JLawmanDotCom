@@ -2,6 +2,8 @@
 layout: page
 title: Implementing the Random Forest Classifier for the First Time
 permalink: /sklearn/rfc-tutorial
+resource: true
+categories: [sklearn]
 ---
 
 <h1 class="page-title">{{ page.title | escape }}</h1>
