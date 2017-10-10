@@ -7,5 +7,7 @@ description: > # this means to ignore newlines until "baseurl:"
 twitter_username: JoshLawman
 github_username:  jlawman
 
+category-list: [pandas, sklearn, deep-learning]
+
 sass:
     style: compressed
