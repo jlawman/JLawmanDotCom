@@ -6,8 +6,6 @@ resource: true
 categories: [sklearn]
 ---
 
-<h1 class="page-title">{{ page.title | escape }}</h1>
-
 This tutorial walks you through implementing scikit-learn's Random Forest Classifier on the Iris training set. It demonstrates the use of a few other functions from scikit-learn such as train_test_split and classification_report.
 
 Note: you will not be able to run the code unless you have scikit-learn and pandas installed. If you don't know how to do that or if you want to replicate the code yourself follow my tutorial to <a href="http://joshlawman.com/getting-set-up-in-jupyter-notebooks-using-anaconda-to-install-the-jupyter-pandas-sklearn-etc/">set up Jupyter Notebook</a> first.
