@@ -9,7 +9,7 @@ layout: default
 
 {% for cat in site.category-list %}
 <div class="card grey lighten-2" id={{cat}}>
-<div class="card-content purple-text">
+<div class="card-content white purple-text">
 <span class="card-title"> {{ cat }}</span>
 <div class="card grey lighten-3">
 <div class="card-content purple-text">
@@ -18,7 +18,7 @@ layout: default
     {% if page.resource == true %}
       {% for pc in page.categories |sort:'alphabetical' %}
         {% if pc == cat %}
-          <li><a class="card-content purple-text" href="{{ page.url }}">{{ page.title }}</a></li>
+          <li><a class="waves-effect waves-light btn purple" href="{{ page.url }}">{{ page.title }}</a></li>
         {% endif %}   <!-- cat-match-p -->
       {% endfor %}  <!-- page-category -->
     {% endif %}   <!-- resource-p -->
