@@ -74,7 +74,3 @@ br {
     margin-bottom: 10px;
 }
 /************** Jupyter Notebook CSS ************************/
-
-a.anchor-link{
-    opacity:0 !important;
-}
