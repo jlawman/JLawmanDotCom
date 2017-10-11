@@ -7,22 +7,19 @@ layout: default
     
 
 {% for cat in site.category-list %}
-<div class="card blue-grey lighten-4" id={{cat}}>
-<div class="card-content purple-text">
-<span class="card-title"> {{ cat }}</span>
-<ul>
+<div class="section" id={{cat}}>
+<h5> {{ cat }}</h5>
+<div class="collection">
   {% for page in site.pages %}
     {% if page.resource == true %}
       {% for pc in page.categories %}
         {% if pc == cat %}
-          <li><a class="card-content purple-text" href="{{ page.url }}">{{ page.title }}</a></li>
+          <a class="collection-item purple-text" href="{{ page.url }}">{{ page.title }}</a>
         {% endif %}   <!-- cat-match-p -->
       {% endfor %}  <!-- page-category -->
     {% endif %}   <!-- resource-p -->
   {% endfor %}  <!-- page -->
-</ul>
 </div>
 </div>
 {% endfor %}  <!-- cat -->
-  
-</div>
+  </div>
