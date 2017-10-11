@@ -18,7 +18,7 @@ layout: default
     {% if page.resource == true %}
       {% for pc in page.categories |sort:'alphabetical' %}
         {% if pc == cat %}
-          <li><a class="waves-effect waves-light" href="{{ page.url }}">{{ page.title }}</a></li>
+          <li><a href="{{ page.url }}">{{ page.title }}</a></li>
         {% endif %}   <!-- cat-match-p -->
       {% endfor %}  <!-- page-category -->
     {% endif %}   <!-- resource-p -->
