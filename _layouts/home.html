@@ -14,9 +14,9 @@ layout: default
 <div class="card grey lighten-3">
 <div class="card-content purple-text">
 <ul>
-  {% for page in site.pages %}
+  {% for page in site.pages |sort:'title'%}
     {% if page.resource == true %}
-      {% for pc in page.categories |sort:'alphabetical' %}
+      {% for pc in page.categories %}
         {% if pc == cat %}
           <li><a href="{{ page.url }}">{{ page.title }}</a></li>
         {% endif %}   <!-- cat-match-p -->
