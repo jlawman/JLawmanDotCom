@@ -103,6 +103,6 @@ pre{
 }
 
 .output_prompt{
-    opacity:0;
-    line-height:0;
+    opacity:0 !important;
+    line-height:0 !important;
 }
