@@ -1,0 +1,18 @@
+- Remove menu link in mobile version
+- Increase default font size
+- Create hover effect for homepage links
+- Replace incorrect tab image
+- Create about page
+	- Create link to github
+- Fix pandas imputation page
+- Fix footer loading
+
+
+Maybe
+- Create drop-down menu for topics and topic specific pages
+- Remove input prompt
+
+Consider 
+- Looking into speed issues
+
+
