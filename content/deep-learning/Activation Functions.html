@@ -1,4 +1,3 @@
-
 ---
 layout: page
 title: Activation functions
@@ -36,7 +35,7 @@ categories: [deeplearning]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -46,8 +45,23 @@ categories: [deeplearning]
 <span class="c1">#Create array of possible z values</span>
 <span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="n">num</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
 
-<span class="c1">#Function to plot activation functions</span>
-<span class="k">def</span> <span class="nf">draw_activation_plot</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">quadrants</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">y_ticks</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">two_quad_y_lim</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span> <span class="n">four_quad_y_lim</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]):</span>     
+<span class="k">def</span> <span class="nf">draw_activation_plot</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">quadrants</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">y_ticks</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">two_quad_y_lim</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span> <span class="n">four_quad_y_lim</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]):</span> 
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Draws plot of activation function</span>
+<span class="sd">   </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    a : Output of activation function over domain z.</span>
+<span class="sd">    </span>
+<span class="sd">    quadrants: The number of quadrants in the plot (options: 2 or 4)</span>
+<span class="sd">    </span>
+<span class="sd">    y_ticks: Ticks to show on the y-axis.</span>
+<span class="sd">    </span>
+<span class="sd">    two_quad_y_lim: The limit of the y axis for 2 quadrant plots.</span>
+<span class="sd">    </span>
+<span class="sd">    four_quad_y_lim: The limit of the y axis for 4 quadrant plots.</span>
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1">#Create figure and axis</span>
     <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
     <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
