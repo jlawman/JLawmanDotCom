@@ -6,7 +6,9 @@
 	- Create link to github
 - Fix pandas imputation page
 - Fix footer loading
+- Get LaTeX to render
 
+- For activation functions, plot derivatives
 
 Maybe
 - Create drop-down menu for topics and topic specific pages
